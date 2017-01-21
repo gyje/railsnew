@@ -1,0 +1,2 @@
+# railsnew
+rails localhost ubuntu
