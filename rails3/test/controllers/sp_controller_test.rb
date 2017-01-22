@@ -2,7 +2,7 @@ require 'test_helper'
 
 class SpControllerTest < ActionDispatch::IntegrationTest
   def setup
-	@base_title="Home"
+	@base_title="Ruby"
   end
   test "should get home" do
     get sp_home_url
