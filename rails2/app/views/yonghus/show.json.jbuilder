@@ -1,0 +1,1 @@
+json.partial! "yonghus/yonghu", yonghu: @yonghu

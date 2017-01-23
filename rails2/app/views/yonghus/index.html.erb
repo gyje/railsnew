@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Yonghus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @yonghus.each do |yonghu| %>
+      <tr>
+        <td><%= yonghu.name %></td>
+        <td><%= yonghu.email %></td>
+        <td><%= link_to 'Show', yonghu %></td>
+        <td><%= link_to 'Edit', edit_yonghu_path(yonghu) %></td>
+        <td><%= link_to 'Destroy', yonghu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Yonghu', new_yonghu_path %>

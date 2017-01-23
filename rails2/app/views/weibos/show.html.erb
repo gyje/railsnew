@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Neirong:</strong>
+  <%= @weibo.neirong %>
+</p>
+
+<p>
+  <strong>Yonghuid:</strong>
+  <%= @weibo.yonghuid %>
+</p>
+
+<%= link_to 'Edit', edit_weibo_path(@weibo) %> |
+<%= link_to 'Back', weibos_path %>

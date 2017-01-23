@@ -1,0 +1,1 @@
+json.array! @yonghus, partial: 'yonghus/yonghu', as: :yonghu
