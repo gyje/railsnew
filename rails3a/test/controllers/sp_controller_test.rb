@@ -6,6 +6,11 @@ class SpControllerTest < ActionDispatch::IntegrationTest
       @title="pages"
   end
 
+  test "should get root" do
+      get root_url
+      assert_response:success
+  end
+
   test "should get about" do
     get sp_about_url
     assert_response:success
