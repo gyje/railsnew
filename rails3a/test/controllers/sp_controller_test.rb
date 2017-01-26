@@ -10,6 +10,7 @@ class SpControllerTest < ActionDispatch::IntegrationTest
       get root_url
       assert_response:success
   end
+
   test "should get callme" do
     get sp_callme_url
     assert_response:success
@@ -32,6 +33,12 @@ class SpControllerTest < ActionDispatch::IntegrationTest
     get sp_help_url
     assert_response :success
     assert_select "title" , "help,#{@title}"
+  end
+
+  test "should get 404" do
+    get sp_404_url
+    assert_response:success
+    assert_select "title" , "404,#{@title}"
   end
 
 end

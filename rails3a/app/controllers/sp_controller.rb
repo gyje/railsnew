@@ -10,5 +10,7 @@ class SpController < ApplicationController
 
   def callme
   end
-
+  
+  def a404
+  end
 end
