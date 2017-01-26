@@ -10,6 +10,11 @@ class SpControllerTest < ActionDispatch::IntegrationTest
       get root_url
       assert_response:success
   end
+  test "should get callme" do
+    get sp_callme_url
+    assert_response:success
+    assert_select "title","callme,#{@title}"
+  end
 
   test "should get about" do
     get sp_about_url

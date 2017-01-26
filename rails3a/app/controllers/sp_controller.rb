@@ -7,4 +7,8 @@ class SpController < ApplicationController
 
   def about
   end
+
+  def callme
+  end
+
 end
