@@ -18,4 +18,15 @@ class RControllerTest < ActionDispatch::IntegrationTest
     assert_select "title","help | #{@title}"
   end
 
+  test "should get about" do
+      get r_about_url
+      assert_response:success
+      assert_select "mark","about | #{@title}"	
+  end
+
+  test "should get root" do
+      get root_url
+      assert_response:success
+  end
+
 end

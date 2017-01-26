@@ -4,4 +4,7 @@ class RController < ApplicationController
 
   def help
   end
+
+  def about
+  end
 end
