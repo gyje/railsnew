@@ -38,7 +38,7 @@ class SpControllerTest < ActionDispatch::IntegrationTest
   test "should get 404" do
     get sp_404_url
     assert_response:success
-    assert_select "title" , "404,#{@title}"
+    assert_select "mark" , "404,#{@title}"
   end
 
 end
